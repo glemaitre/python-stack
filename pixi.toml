@@ -19,13 +19,15 @@ imbalanced-learn = { path = "imbalanced-learn" }
 skore = { path = "skore" }
 skrub = { path = "skrub" }
 
-[tasks]
-clone-imbalanced-learn = { cmd = "git clone git@github.com:scikit-learn-contrib/imbalanced-learn.git imbalanced-learn/imbalanced-learn" }
-clone-scikit-learn = { cmd = "git clone git@github.com:scikit-learn/scikit-learn.git scikit-learn/scikit-learn" }
-clone-skore = { cmd = "git clone git@github.com:probabl-ai/skore.git skore/skore" }
-clone-skore-local-project = { cmd = "git clone git@github.com:probabl-ai/skore.git skore-local-project/skore-local-project" }
-clone-skrub = { cmd = "git clone git@github.com:skrub-data/skrub.git skrub/skrub" }
-clone-all = { depends-on = ["clone-imbalanced-learn", "clone-scikit-learn", "clone-skore", "clone-skore-local-project", "clone-skrub"] }
+[feature.clone.tasks]
+clean-repo-dirs = "rm -rf imbalanced-learn/imbalanced-learn scikit-learn/scikit-learn skore/skore skore-local-project/skore-local-project skrub/skrub"
+clone-imbalanced-learn = "git clone git@github.com:scikit-learn-contrib/imbalanced-learn.git imbalanced-learn/imbalanced-learn"
+clone-scikit-learn = "git clone git@github.com:scikit-learn/scikit-learn.git scikit-learn/scikit-learn"
+clone-skore = "git clone git@github.com:probabl-ai/skore.git skore/skore"
+clone-skore-local-project = "git clone git@github.com:probabl-ai/skore.git skore-local-project/skore-local-project"
+clone-skrub = "git clone git@github.com:skrub-data/skrub.git skrub/skrub"
+clone-all = { depends-on = ["clean-repo-dirs", "clone-imbalanced-learn", "clone-scikit-learn", "clone-skore", "clone-skore-local-project", "clone-skrub"] }
 
 [environments]
 source = { features = ["source"] }
+clone = { features = ["clone"], no-default-feature = true }
