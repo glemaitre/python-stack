@@ -164,7 +164,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/libcblas-3.9.0-34_hb3479ef_openblas.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libcrc32c-1.1.2-hbdafb3b_0.tar.bz2
       - conda: https://prefix.dev/conda-forge/osx-arm64/libcurl-8.14.1-h73640d1_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libcxx-20.1.8-hf598326_1.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/libcxx-21.1.0-hf598326_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libdeflate-1.24-h5773f1b_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libedit-3.1.20250104-pl5321hafb1f1b_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libev-4.33-h93a5062_2.conda
@@ -204,7 +204,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/libxml2-2.13.8-h4a9ca0c_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libzopfli-1.0.3-h9f76cd9_0.tar.bz2
-      - conda: https://prefix.dev/conda-forge/osx-arm64/llvm-openmp-20.1.8-hbb9b287_2.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/llvm-openmp-21.1.0-hbb9b287_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/lz4-c-1.10.0-h286801f_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/markupsafe-3.0.2-py313ha9b7d5b_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/matplotlib-3.10.5-py313h39782a4_0.conda
@@ -363,42 +363,6 @@ environments:
       - conda: .
       - pypi: https://files.pythonhosted.org/packages/79/b4/ab091585eaa77299558e3289ca206846aefc123fb320b5656ab2542c20ad/libsass-0.23.0.tar.gz
       - pypi: https://files.pythonhosted.org/packages/3f/ec/194f2dbe55b3fe0941b43286c21abb49064d9d023abfb99305c79ad77cad/sphinxcontrib_sass-0.3.5-py2.py3-none-any.whl
-  source:
-    channels:
-    - url: https://prefix.dev/conda-forge/
-    packages:
-      osx-arm64:
-      - conda: https://prefix.dev/conda-forge/osx-arm64/bzip2-1.0.8-h99b78c6_7.conda
-      - conda: https://prefix.dev/conda-forge/noarch/ca-certificates-2025.8.3-hbd8a1cb_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/icu-75.1-hfee45f7_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/joblib-1.5.2-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libblas-3.9.0-34_h10e41b3_openblas.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libcblas-3.9.0-34_hb3479ef_openblas.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libcxx-20.1.8-hf598326_1.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libexpat-2.7.1-hec049ff_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libffi-3.4.6-h1da3d7d_1.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libgfortran-15.1.0-hfdf1602_1.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libgfortran5-15.1.0-hb74de2c_1.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/liblapack-3.9.0-34_hc9a63f6_openblas.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/liblzma-5.8.1-h39f12f2_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libmpdec-4.0.0-h5505292_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libopenblas-0.3.30-openmp_h60d53f8_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libsqlite-3.50.4-h4237e3c_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/llvm-openmp-20.1.8-hbb9b287_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/ncurses-6.5-h5e97a16_3.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/ninja-1.13.1-h4f10f1e_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/numpy-2.3.2-py313h674b998_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/openssl-3.5.2-he92f556_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/python-3.13.5-hf3f3da0_102_cp313.conda
-      - conda: https://prefix.dev/conda-forge/noarch/python_abi-3.13-8_cp313.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/readline-8.2-h1d1bf99_2.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/scipy-1.16.1-py313h74efe86_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/setuptools-80.9.0-pyhff2d567_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/threadpoolctl-3.6.0-pyhecae5ae_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h892fb3f_2.conda
-      - conda: https://prefix.dev/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
-      - conda: .
 packages:
 - conda: https://prefix.dev/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_2.conda
   sha256: a3967b937b9abf0f2a99f3173fa4630293979bd1644709d89580e7c62a544661
@@ -2492,16 +2456,16 @@ packages:
   purls: []
   size: 403456
   timestamp: 1749033320430
-- conda: https://prefix.dev/conda-forge/osx-arm64/libcxx-20.1.8-hf598326_1.conda
-  sha256: 119b3ac75cb1ea29981e5053c2cb10d5f0b06fcc81b486cb7281f160daf673a1
-  md5: a69ef3239d3268ef8602c7a7823fd982
+- conda: https://prefix.dev/conda-forge/osx-arm64/libcxx-21.1.0-hf598326_1.conda
+  sha256: 58427116dc1b58b13b48163808daa46aacccc2c79d40000f8a3582938876fed7
+  md5: 0fb2c0c9b1c1259bc7db75c1342b1d99
   depends:
   - __osx >=11.0
   license: Apache-2.0 WITH LLVM-exception
   license_family: Apache
   purls: []
-  size: 568267
-  timestamp: 1752814881595
+  size: 568692
+  timestamp: 1756698505599
 - conda: https://prefix.dev/conda-forge/osx-arm64/libdeflate-1.24-h5773f1b_0.conda
   sha256: 417d52b19c679e1881cce3f01cad3a2d542098fa2d6df5485aac40f01aede4d1
   md5: 3baf58a5a87e7c2f4d243ce2f8f2fe5c
@@ -3001,19 +2965,19 @@ packages:
   purls: []
   size: 147901
   timestamp: 1607309166373
-- conda: https://prefix.dev/conda-forge/osx-arm64/llvm-openmp-20.1.8-hbb9b287_2.conda
-  sha256: a5bf3712542ad6c37f5a091174f65fa221197547f6f2e90f227476d90ed8b901
-  md5: 725044ef08febdc554bbf2a895ef798f
+- conda: https://prefix.dev/conda-forge/osx-arm64/llvm-openmp-21.1.0-hbb9b287_0.conda
+  sha256: c6750073a128376a14bedacfa90caab4c17025c9687fcf6f96e863b28d543af4
+  md5: e57d95fec6eaa747e583323cba6cfe5c
   depends:
   - __osx >=11.0
   constrains:
-  - openmp 20.1.8|20.1.8.*
   - intel-openmp <0.0a0
+  - openmp 21.1.0|21.1.0.*
   license: Apache-2.0 WITH LLVM-exception
   license_family: APACHE
   purls: []
-  size: 283280
-  timestamp: 1756144638686
+  size: 286039
+  timestamp: 1756673290280
 - conda: https://prefix.dev/conda-forge/osx-arm64/lz4-c-1.10.0-h286801f_1.conda
   sha256: 94d3e2a485dab8bdfdd4837880bde3dd0d701e2b97d6134b8806b7c8e69c8652
   md5: 01511afc6cc1909c5303cf31be17b44f
@@ -4360,13 +4324,13 @@ packages:
   - scipy >=1.6.0,<2
   - joblib >=1.2.0,<2
   - threadpoolctl >=3.1.0,<4
-  - llvm-openmp >=20.1.8
-  - llvm-openmp >=20.1.8
-  - libcxx >=20
+  - llvm-openmp >=21.1.0
+  - llvm-openmp >=21.1.0
+  - libcxx >=21
   - python_abi 3.13.* *_cp313
   license: BSD-3-Clause
   input:
-    hash: 2103674c950d5ccb019b3f3d39e45cc61bf8d7d3b1553799b48ac1a7246be8f9
+    hash: 18109c0cbcb9bf6be7bbd9d9cfa52d799b826c715e7dd22fd1b21a206c2759c8
     globs:
     - pyproject.toml
 - conda: https://prefix.dev/conda-forge/osx-arm64/scipy-1.16.1-py313h74efe86_0.conda

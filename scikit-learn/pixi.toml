@@ -85,8 +85,9 @@ docs = { cmd = "spin docs", cwd = "scikit-learn" }
 [feature.lint.dependencies]
 pre-commit = "*"
 
-[feature.lint.tasks]
-lint = { cmd = "pre-commit install && pre-commit run -v --all-files --show-diff-on-failure" }
+[feature.lint.tasks.lint]
+cmd = "pre-commit install && pre-commit run -v --all-files --show-diff-on-failure"
+cwd = "scikit-learn"
 
 [feature.tests.dependencies]
 pytest = ">=7.1.2"

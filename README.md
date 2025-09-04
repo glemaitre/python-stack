@@ -9,7 +9,7 @@ Install `pixi` as indicated at https://pixi.sh/latest/
 Then, you can clone all repositories using:
 
 ```shell
-pixi run clone-all
+pixi run --as-is clone-all
 ```
 
 Then, each folder has its own `pixi.toml` manifest that depends on other folders.
