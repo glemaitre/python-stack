@@ -28,6 +28,13 @@ clone-skore-local-project = "git clone git@github.com:probabl-ai/skore.git skore
 clone-skrub = "git clone git@github.com:skrub-data/skrub.git skrub/skrub"
 clone-all = { depends-on = ["clean-repo-dirs", "clone-imbalanced-learn", "clone-scikit-learn", "clone-skore", "clone-skore-local-project", "clone-skrub"] }
 
+update-imbalanced-learn = { cmd = "pixi update", cwd = "imbalanced-learn" }
+update-scikit-learn = { cmd = "pixi update", cwd = "scikit-learn" }
+update-skore = { cmd = "pixi update", cwd = "skore" }
+update-skore-local-project = { cmd = "pixi update", cwd = "skore-local-project" }
+update-skrub = { cmd = "pixi update", cwd = "skrub" }
+update-all = { depends-on = ["update-imbalanced-learn", "update-scikit-learn", "update-skore", "update-skore-local-project", "update-skrub"] }
+
 [environments]
 source = { features = ["source"] }
 clone = { features = ["clone"], no-default-feature = true }
