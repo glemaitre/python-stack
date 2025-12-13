@@ -1,0 +1,60 @@
+[workspace]
+preview = ["pixi-build"]
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["osx-arm64"]
+
+[package]
+name = "sklearn-compat"
+version = "0.1.0"
+
+[package.build.backend]
+name = "pixi-build-python"
+version = "*"
+
+[package.build.config]
+noarch = true
+
+[package.build.source]
+path = "sklearn-compat"
+
+[package.build-dependencies]
+python = "~=3.13.0"
+
+[package.host-dependencies]
+uv = "*"
+python = "~=3.13.0"
+hatchling = "*"
+
+[package.run-dependencies]
+python = "~=3.13.0"
+scikit-learn = { path = "../scikit-learn" }
+
+[feature.source.dependencies]
+ninja = "*"
+scikit-learn = { path = "../scikit-learn" }
+sklearn-compat = { path = "." }
+
+[feature.dev.dependencies]
+ipykernel = "*"
+ipython = "*"
+jupyterlab = "*"
+twine = "*"
+
+[feature.lint.dependencies]
+pre-commit = "*"
+
+[feature.tests.dependencies]
+pandas = ">=2.0.3,<3"
+pytz = ">=2025.1,<2026"
+pytest = ">=7.2.2,<9"
+pytest-cov = ">=4.1.0,<6"
+pytest-xdist = ">=3.5.0,<4"
+
+[feature.lint.tasks]
+lint = { cmd = "pre-commit install && pre-commit run -v --all-files --show-diff-on-failure", cwd = "sklearn-compat" }
+
+[feature.tests.tasks]
+tests = { cmd = "pytest -vsl --cov=sklearn_compat --cov-report=xml --cov-report=term-missing tests", cwd = "sklearn-compat" }
+
+[environments]
+dev = { features = ["source", "dev", "lint", "tests"], no-default-feature = true }
