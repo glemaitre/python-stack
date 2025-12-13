@@ -4499,7 +4499,7 @@ packages:
   - python_abi 3.13.* *_cp313
   license: BSD-3-Clause
   input:
-    hash: ecd5f4d243a44702a4dbd3f18db44653ddda75385892fc6d571ac58e4476989a
+    hash: 3dc2444cb95866b016987f03227c9b8af19349e714b46211b5445a0c7380150a
     globs:
     - pyproject.toml
   package_build_source:

@@ -3,14 +3,10 @@ environments:
   default:
     channels:
     - url: https://prefix.dev/conda-forge/
-    options:
-      pypi-prerelease-mode: if-necessary-or-explicit
     packages: {}
   dev:
     channels:
     - url: https://prefix.dev/conda-forge/
-    options:
-      pypi-prerelease-mode: if-necessary-or-explicit
     packages:
       osx-arm64:
       - conda: https://prefix.dev/conda-forge/osx-arm64/_openmp_mutex-4.5-7_kmp_llvm.conda
@@ -908,8 +904,6 @@ packages:
   version: 0.14.0.dev0
   build: pyh4616a5c_0
   subdir: noarch
-  variants:
-    target_platform: noarch
   depends:
   - python ~=3.13.0
   - python *
@@ -919,11 +913,9 @@ packages:
   - threadpoolctl >=3.1.0,<4
   - scikit-learn
   input:
-    hash: 1843e4989db071cfc44384d4bd4db20c2ad61e2a23995c4d9fd8a0c28a85cba4
+    hash: 9ff2d659069a97f79982db1623b1d29cea126ed0c09b8e6c92f418e55f57b264
     globs:
     - pyproject.toml
-  package_build_source:
-    path: imbalanced-learn
   sources:
     scikit-learn:
       path: ../scikit-learn
@@ -2710,8 +2702,6 @@ packages:
   version: 1.8.0.dev0
   build: h60d57d3_0
   subdir: osx-arm64
-  variants:
-    target_platform: osx-arm64
   depends:
   - python ~=3.13.0
   - numpy >=1.19.5,<3
@@ -2725,11 +2715,9 @@ packages:
   - python_abi 3.13.* *_cp313
   license: BSD-3-Clause
   input:
-    hash: ecd5f4d243a44702a4dbd3f18db44653ddda75385892fc6d571ac58e4476989a
+    hash: 88f6656d7d16a54cfd5357a03fd89ce33f96ef1c77cff1dce9c0a6f22a9bfdaf
     globs:
     - pyproject.toml
-  package_build_source:
-    path: scikit-learn
 - conda: https://prefix.dev/conda-forge/osx-arm64/scipy-1.16.3-py313h0d10b07_1.conda
   sha256: 8d3a1018a7c6ab1e64904114a6b20fa72dd4ec384ea7c103e65f1c16a5518da2
   md5: 55c947938346fb644c2752383c40f935

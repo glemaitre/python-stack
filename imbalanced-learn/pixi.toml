@@ -1,19 +1,13 @@
 [workspace]
-name = "imbalanced-learn"
+preview = ["pixi-build"]
 channels = ["https://prefix.dev/conda-forge"]
 platforms = ["osx-arm64"]
-preview = ["pixi-build"]
 
 [package]
-name = { workspace = true }
-authors = ["imbalanced-learn developers"]
-description = "Toolbox for imbalanced dataset in machine learning"
+name = "imbalanced-learn"
 version = "0.14.0.dev0"
 
 [package.build.backend]
-channels = [
-  "https://prefix.dev/conda-forge",
-]
 name = "pixi-build-python"
 version = "*"
 
