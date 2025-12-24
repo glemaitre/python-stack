@@ -32,10 +32,12 @@ scipy = ">=1.11.4,<2"
 joblib = ">=1.2.0,<2"
 threadpoolctl = ">=3.1.0,<4"
 scikit-learn = { path = "../scikit-learn" }
+sklearn-compat = { path = "../sklearn-compat" }
 
 [feature.source.dependencies]
 ninja = "*"
 scikit-learn = { path = "../scikit-learn" }
+sklearn-compat = { path = "../sklearn-compat" }
 imbalanced-learn = { path = "." }
 
 [feature.dev.dependencies]
