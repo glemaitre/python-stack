@@ -1,0 +1,67 @@
+[workspace]
+preview = ["pixi-build"]
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["osx-arm64"]
+
+[package]
+name = "skada"
+version = "0.5.0.dev0"
+
+[package.build.backend]
+name = "pixi-build-python"
+version = "*"
+
+[package.build.config]
+noarch = true
+
+[package.build.source]
+path = "skada"
+
+[package.build-dependencies]
+python = "~=3.13.0"
+
+[package.host-dependencies]
+uv = "*"
+python = "~=3.13.0"
+setuptools = "*"
+
+[package.run-dependencies]
+python = "~=3.13.0"
+numpy = ">=1.25.2,<3"
+scipy = ">=1.11.4,<2"
+pot = ">=0.9.3,<1"
+pandas = ">=2.3.0,<3"
+scikit-learn = { path = "../scikit-learn" }
+
+[feature.source.dependencies]
+ninja = "*"
+scikit-learn = { path = "../scikit-learn" }
+skada = { path = "." }
+
+[feature.deep.dependencies]
+pytorch = "*"
+torchvision = "*"
+skorch = "*"
+
+[feature.tests.dependencies]
+pytest = "*"
+pytest-cov = "*"
+codecov = "*"
+
+[feature.docs.dependencies]
+sphinx = "*"
+sphinx-gallery = "*"
+sphinx-rtd-theme = "*"
+numpydoc = "*"
+memory_profiler = "*"
+myst-parser = "*"
+matplotlib = "*"
+
+[feature.dev.dependencies]
+ipykernel = "*"
+ipython = "*"
+jupyterlab = "*"
+twine = "*"
+
+[environments]
+dev = { features = ["source", "dev", "deep", "docs", "tests"], no-default-feature = true }
