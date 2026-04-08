@@ -44,6 +44,7 @@ rich = "*"
 seaborn = "*"
 skore-local-project = { path = "../skore-local-project" }
 skore-hub-project = { path = "../skore-hub-project" }
+skore-mlflow-project = { path = "../skore-mlflow-project" }
 scikit-learn = { path = "../scikit-learn" }
 skrub = { path = "../skrub" }
 
@@ -52,12 +53,26 @@ ninja = "*"
 scikit-learn = { path = "../scikit-learn" }
 skore-local-project = { path = "../skore-local-project" }
 skore-hub-project = { path = "../skore-hub-project" }
+skore-mlflow-project = { path = "../skore-mlflow-project" }
 skore = { path = "." }
 
 [feature.dev.dependencies]
 ipykernel = "*"
 ipython = "*"
 jupyterlab = "*"
+tabulate = "*"
+# for demo
+polars = "*"
+pyarrow = "*"
+pydot = "*"
+optuna = "*"
+optuna-dashboard = "*"
+plotly = "*"
+holidays = "*"
+graphviz = "*"
+
+[feature.dev.activation]
+scripts = ["activate_dot.sh"]
 
 [feature.lint.dependencies]
 pre-commit = "==4.3.0"
@@ -92,6 +107,8 @@ sphinx-gallery = "*"
 sphinx-copybutton = "*"
 sphinx-tabs = "*"
 sphinx-autosummary-accessors = "*"
+sphinx-issues = "*"
+setuptools = "<81"
 xgboost = "*"
 
 [feature.docs.tasks]
@@ -99,3 +116,6 @@ docs = { cmd = "make html", cwd = "skore/sphinx" }
 
 [environments]
 dev = { features = ["source", "dev", "docs", "lint", "tests"], no-default-feature = true }
+
+[dependencies]
+pytest = ">=9.0.2,<10"
