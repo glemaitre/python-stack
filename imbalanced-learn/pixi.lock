@@ -120,7 +120,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/gitpython-3.1.46-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glib-tools-2.86.4-h60c1bae_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/glog-0.7.1-heb240a5_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/google-auth-2.49.1-pyhcf101f3_0.conda
+      - conda: https://prefix.dev/conda-forge/noarch/google-auth-2.49.2-pyhcf101f3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/graphene-3.4.3-pyhd8ed1ab_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/graphite2-1.3.14-hec049ff_2.conda
       - conda: https://prefix.dev/conda-forge/noarch/graphql-core-3.2.8-pyhcf101f3_0.conda
@@ -220,7 +220,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/libintl-0.25.1-h493aca8_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libjpeg-turbo-3.1.2-hc919400_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/liblapack-3.11.0-6_hd9741b5_openblas.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/liblzma-5.8.2-h8088a28_0.conda
+      - conda: https://prefix.dev/conda-forge/osx-arm64/liblzma-5.8.3-h8088a28_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libmpdec-4.0.0-h84a0fba_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libnghttp2-1.68.1-h8f3e76b_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/libopenblas-0.3.32-openmp_he657e61_0.conda
@@ -282,7 +282,6 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/opentelemetry-semantic-conventions-0.37b0-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/optree-0.19.0-py313h5c29297_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/orc-2.3.0-hd11884d_0.conda
-      - conda: https://prefix.dev/conda-forge/osx-arm64/orjson-3.11.8-py313hf195ed2_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_1.conda
       - conda: https://prefix.dev/conda-forge/noarch/packaging-24.2-pyhd8ed1ab_2.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/pandas-2.3.3-py313h7d16b84_2.conda
@@ -339,7 +338,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/python-fastjsonschema-2.21.2-pyhe01879c_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/python-gil-3.13.13-h4df99d1_100.conda
       - conda: https://prefix.dev/conda-forge/noarch/python-json-logger-2.0.7-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/python-multipart-0.0.24-pyhcf101f3_0.conda
+      - conda: https://prefix.dev/conda-forge/noarch/python-multipart-0.0.26-pyhcf101f3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/python-tzdata-2026.1-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/python_abi-3.13-8_cp313.conda
       - conda: https://prefix.dev/conda-forge/noarch/pytz-2026.1.post1-pyhcf101f3_0.conda
@@ -359,7 +358,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/rfc3986-2.0.0-pyhd8ed1ab_1.conda
       - conda: https://prefix.dev/conda-forge/noarch/rfc3986-validator-0.1.1-pyh9f0ad1d_0.tar.bz2
       - conda: https://prefix.dev/conda-forge/noarch/rfc3987-syntax-1.1.0-pyhe01879c_1.conda
-      - conda: https://prefix.dev/conda-forge/noarch/rich-14.3.3-pyhcf101f3_0.conda
+      - conda: https://prefix.dev/conda-forge/noarch/rich-14.3.4-pyhcf101f3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/rich-toolkit-0.19.7-pyhcf101f3_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/roman-numerals-4.1.0-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/roman-numerals-py-4.1.0-pyhd8ed1ab_0.conda
@@ -372,12 +371,6 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/setuptools-82.0.1-pyh332efcf_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/shellingham-1.5.4-pyhd8ed1ab_2.conda
       - conda: https://prefix.dev/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skops-0.13.0-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skore-0.15.0-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skore-hub-project-0.0.21-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skore-local-project-0.0.6-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skore-mlflow-project-0.0.4-pyhd8ed1ab_0.conda
-      - conda: https://prefix.dev/conda-forge/noarch/skrub-0.8.0-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/smmap-5.0.3-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/snappy-1.2.2-hada39a4_1.conda
       - conda: https://prefix.dev/conda-forge/noarch/sniffio-1.3.1-pyhd8ed1ab_2.conda
@@ -440,6 +433,12 @@ environments:
       - conda: .
       - conda: ../scikit-learn
       - conda: ../sklearn-compat
+      - conda: ../skops
+      - conda: ../skore
+      - conda: ../skore-hub-project
+      - conda: ../skore-local-project
+      - conda: ../skore-mlflow-project
+      - conda: ../skrub
 packages:
 - conda: https://prefix.dev/conda-forge/osx-arm64/_openmp_mutex-4.5-7_kmp_llvm.conda
   build_number: 7
@@ -1714,9 +1713,9 @@ packages:
   license_family: BSD
   size: 112215
   timestamp: 1718284365403
-- conda: https://prefix.dev/conda-forge/noarch/google-auth-2.49.1-pyhcf101f3_0.conda
-  sha256: 641bdb431fdbddd35b607b4bfd3d576c1e84f30f465c26358313ceb5af4e8194
-  md5: fdc43b218752a4786880c0c019d5dcdb
+- conda: https://prefix.dev/conda-forge/noarch/google-auth-2.49.2-pyhcf101f3_0.conda
+  sha256: 40f8e787f537c50717f8a1dc42c03aa158b455e0a50e0509481fa1789ff02656
+  md5: 2c9520e7091c72839f2cea9217543ef7
   depends:
   - python >=3.10
   - pyasn1-modules >=0.2.1
@@ -1728,9 +1727,8 @@ packages:
   - rsa >=3.1.4,<5
   - python
   license: Apache-2.0
-  license_family: APACHE
-  size: 143924
-  timestamp: 1773393141689
+  size: 143969
+  timestamp: 1775900146226
 - conda: https://prefix.dev/conda-forge/noarch/graphene-3.4.3-pyhd8ed1ab_1.conda
   sha256: c5731e1999749e99c53b1a6c8efbc07a1bf52a44a83da6475c6c9f0d1bb28e96
   md5: 64be7816cf6074a3533c3f23ce2c316e
@@ -2066,8 +2064,10 @@ packages:
   - threadpoolctl >=3.1.0,<4
   - scikit-learn
   - sklearn-compat
+  - skore
+  - skrub
   input:
-    hash: 55f156afdc3fbdf80906d8d9048486f90ae5a2b93c921752b89ce062bb1e5b32
+    hash: caf1644594da7ac4565fbb96ce124d2d64c638f7ad28f047fea25485da2e8186
     globs:
     - pyproject.toml
   sources:
@@ -2075,6 +2075,10 @@ packages:
       path: ../scikit-learn
     sklearn-compat:
       path: ../sklearn-compat
+    skore:
+      path: ../skore
+    skrub:
+      path: ../skrub
 - conda: https://prefix.dev/conda-forge/noarch/importlib-metadata-8.8.0-pyhcf101f3_0.conda
   sha256: 82ab2a0d91ca1e7e63ab6a4939356667ef683905dea631bc2121aa534d347b16
   md5: 080594bf4493e6bae2607e65390c520a
@@ -3062,16 +3066,16 @@ packages:
   license_family: BSD
   size: 18863
   timestamp: 1774504467905
-- conda: https://prefix.dev/conda-forge/osx-arm64/liblzma-5.8.2-h8088a28_0.conda
-  sha256: 7bfc7ffb2d6a9629357a70d4eadeadb6f88fa26ebc28f606b1c1e5e5ed99dc7e
-  md5: 009f0d956d7bfb00de86901d16e486c7
+- conda: https://prefix.dev/conda-forge/osx-arm64/liblzma-5.8.3-h8088a28_0.conda
+  sha256: 34878d87275c298f1a732c6806349125cebbf340d24c6c23727268184bba051e
+  md5: b1fd823b5ae54fbec272cea0811bd8a9
   depends:
   - __osx >=11.0
   constrains:
-  - xz 5.8.2.*
+  - xz 5.8.3.*
   license: 0BSD
-  size: 92242
-  timestamp: 1768752982486
+  size: 92472
+  timestamp: 1775825802659
 - conda: https://prefix.dev/conda-forge/osx-arm64/libmpdec-4.0.0-h84a0fba_1.conda
   sha256: 1089c7f15d5b62c622625ec6700732ece83be8b705da8c6607f4dabb0c4bd6d2
   md5: 57c4be259f5e0b99a5983799a228ae55
@@ -3822,6 +3826,7 @@ packages:
   - protobuf <7.0,>=5.0
   - python >=3.10
   license: Apache-2.0
+  license_family: APACHE
   size: 46789
   timestamp: 1775756371097
 - conda: https://prefix.dev/conda-forge/noarch/opentelemetry-sdk-1.16.0-pyhd8ed1ab_0.conda
@@ -3878,20 +3883,6 @@ packages:
   license_family: APACHE
   size: 548180
   timestamp: 1773230270828
-- conda: https://prefix.dev/conda-forge/osx-arm64/orjson-3.11.8-py313hf195ed2_0.conda
-  sha256: f62b2a7e095d781e3f015a0a0e9eb3cbf48e610a979c468404569583e4452b03
-  md5: 7ae899025a10a73cc647a193e29f6396
-  depends:
-  - python
-  - __osx >=11.0
-  - python 3.13.* *_cp313
-  - python_abi 3.13.* *_cp313
-  constrains:
-  - __osx >=11.0
-  license: Apache-2.0
-  license_family: APACHE
-  size: 335121
-  timestamp: 1774994093311
 - conda: https://prefix.dev/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_1.conda
   sha256: 1840bd90d25d4930d60f57b4f38d4e0ae3f5b8db2819638709c36098c6ba770c
   md5: e51f1e4089cad105b6cac64bd8166587
@@ -4620,16 +4611,15 @@ packages:
   license_family: BSD
   size: 13383
   timestamp: 1677079727691
-- conda: https://prefix.dev/conda-forge/noarch/python-multipart-0.0.24-pyhcf101f3_0.conda
-  sha256: fabe7fa67ae117b2908fde1af3a15a3cf3e28fcfb0ea6e327712a21260b41406
-  md5: f319dd7ebed160df398fda1141fa263d
+- conda: https://prefix.dev/conda-forge/noarch/python-multipart-0.0.26-pyhcf101f3_0.conda
+  sha256: 2c683f35fac0e6d5c314872bbe89f1ff9100e93a6ed3c2c249b5ba7f95baa139
+  md5: 8fe038d7eacf6aa4e0885f6ae9c560e5
   depends:
   - python >=3.10
   - python
   license: Apache-2.0
-  license_family: APACHE
-  size: 30108
-  timestamp: 1775462580903
+  size: 37352
+  timestamp: 1775852154703
 - conda: https://prefix.dev/conda-forge/noarch/python-tzdata-2026.1-pyhd8ed1ab_0.conda
   sha256: b5494ef54bc2394c6c4766ceeafac22507c4fc60de6cbfda45524fc2fcc3c9fc
   md5: d8d30923ccee7525704599efd722aa16
@@ -4837,9 +4827,9 @@ packages:
   license_family: MIT
   size: 22913
   timestamp: 1752876729969
-- conda: https://prefix.dev/conda-forge/noarch/rich-14.3.3-pyhcf101f3_0.conda
-  sha256: b06ce84d6a10c266811a7d3adbfa1c11f13393b91cc6f8a5b468277d90be9590
-  md5: 7a6289c50631d620652f5045a63eb573
+- conda: https://prefix.dev/conda-forge/noarch/rich-14.3.4-pyhcf101f3_0.conda
+  sha256: a941b5e002504e1c9b02ea02180d40186b67d03e8e7d668bf746393c266b3951
+  md5: 2e6a922d07244f514863b7e10bf5c923
   depends:
   - markdown-it-py >=2.2.0
   - pygments >=2.13.0,<3.0.0
@@ -4847,9 +4837,8 @@ packages:
   - typing_extensions >=4.0.0,<5.0.0
   - python
   license: MIT
-  license_family: MIT
-  size: 208472
-  timestamp: 1771572730357
+  size: 208480
+  timestamp: 1775880677603
 - conda: https://prefix.dev/conda-forge/noarch/rich-toolkit-0.19.7-pyhcf101f3_0.conda
   sha256: 9cf3b9a083ebdee70ef5a48fbe409d91d2a8c4eed3c581a7b33b4d5ca7c813be
   md5: 8b1a4d854f9a4ea1e4abc93ccab0ded9
@@ -5028,110 +5017,161 @@ packages:
   sources:
     scikit-learn:
       path: ../scikit-learn
-- conda: https://prefix.dev/conda-forge/noarch/skops-0.13.0-pyhd8ed1ab_0.conda
-  sha256: a4b0008176afe8aa1e3c8cef0bbb8ce1028b3833c1ec1fca842108c077e12cd3
-  md5: 3f1ee5538071da97f362a3321e53e6dc
+- conda: ../skops
+  name: skops
+  version: 0.14.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
-  - numpy >=1.25.0
-  - packaging >=17.0
-  - prettytable >=3.9
-  - python >=3.9
-  - scikit-learn >=1.2
-  - scipy >=1.10.0
-  license: MIT
-  license_family: MIT
-  size: 103008
-  timestamp: 1754500284698
-- conda: https://prefix.dev/conda-forge/noarch/skore-0.15.0-pyhd8ed1ab_0.conda
-  sha256: 48280aef8740a444e74cd70750958ee1f85ffa0bee7a46a04846e5abe96ebbc3
-  md5: 9edfbc621261fbf8a9851a70a96d5eac
+  - python ~=3.13.0
+  - python *
+  - numpy >=1.25.2,<3
+  - scipy >=1.11.4,<2
+  - joblib >=1.2.0,<2
+  - threadpoolctl >=3.1.0,<4
+  - scikit-learn
+  - prettytable >=3.9.0,<4
+  - packaging >17.0
+  input:
+    hash: e8f3e21988b7f571c61b326d3aee3e3b740276241e4978d70193ac0f8d7f7ed4
+    globs:
+    - pyproject.toml
+  sources:
+    scikit-learn:
+      path: ../scikit-learn
+- conda: ../skore
+  name: skore
+  version: 0.11.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
+  - python ~=3.13.0
+  - python *
   - anywidget
-  - ipython
   - ipywidgets
-  - jinja2
   - joblib
-  - matplotlib-base
+  - matplotlib
   - numpy
   - pandas
   - plotly
-  - python >=3.10
-  - rich >=14.2
-  - scikit-learn
+  - rich
   - seaborn
-  - skore-hub-project >=0.0.21
-  - skore-local-project >=0.0.5
-  - skore-mlflow-project >=0.0.3
+  - skore-local-project
+  - skore-hub-project
+  - skore-mlflow-project
+  - scikit-learn
   - skrub
   license: MIT
-  license_family: MIT
-  size: 127695
-  timestamp: 1775132526327
-- conda: https://prefix.dev/conda-forge/noarch/skore-hub-project-0.0.21-pyhd8ed1ab_0.conda
-  sha256: 5dc62a287316d97f7ea7d2b22cfab52049b0af29639e1ed177df2b7f3ac936e6
-  md5: aea324454e157908579ae76cf25cd377
+  input:
+    hash: 57f370e09365957d81ceae962dffb9b05e3b8b6065528c8eaa32728acb97c765
+    globs:
+    - pyproject.toml
+  sources:
+    scikit-learn:
+      path: ../scikit-learn
+    skore-hub-project:
+      path: ../skore-hub-project
+    skore-local-project:
+      path: ../skore-local-project
+    skore-mlflow-project:
+      path: ../skore-mlflow-project
+    skrub:
+      path: ../skrub
+- conda: ../skore-hub-project
+  name: skore-hub-project
+  version: 0.11.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
+  - python ~=3.13.0
+  - python *
   - blake3
   - httpx
   - joblib
-  - matplotlib-base
-  - numpy
-  - orjson
+  - matplotlib
   - pydantic
-  - python >=3.10
-  - rich >=14.2
+  - rich
+  - ninja
   - scikit-learn
-  - scipy
+  - skops
   license: MIT
-  license_family: MIT
-  size: 38117
-  timestamp: 1775122484859
-- conda: https://prefix.dev/conda-forge/noarch/skore-local-project-0.0.6-pyhd8ed1ab_0.conda
-  sha256: a0b9ab7f8b9300ee8d5cbe37520a64861c2a7d01854928f4aedf98a6d4e25097
-  md5: 338eabc1266f00fcdedce3c5f2fcafe3
+  input:
+    hash: 22e25f3ece11131dbab0048fe6313694fa57adebc3ee1957790551e89256c0e1
+    globs:
+    - pyproject.toml
+  sources:
+    scikit-learn:
+      path: ../scikit-learn
+    skops:
+      path: ../skops
+- conda: ../skore-local-project
+  name: skore-local-project
+  version: 0.11.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
+  - python ~=3.13.0
+  - python *
   - diskcache
   - joblib
   - platformdirs
-  - python >=3.10
   - rich
   license: MIT
-  license_family: MIT
-  size: 17263
-  timestamp: 1775131716799
-- conda: https://prefix.dev/conda-forge/noarch/skore-mlflow-project-0.0.4-pyhd8ed1ab_0.conda
-  sha256: a0cc2d8c1f04256762e05163ac3c122da3ec14a676f428ceabff2cee09be791e
-  md5: d8e156b783b54044ad26982f5ef7dd70
+  input:
+    hash: f277ce15d3d84ee8beba42a92b8aefdbe8a3f641dc47e5669ef81c49e691e660
+    globs:
+    - pyproject.toml
+- conda: ../skore-mlflow-project
+  name: skore-mlflow-project
+  version: 0.11.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
+  - python ~=3.13.0
+  - python *
+  - mlflow >=3.10.0
   - joblib
-  - matplotlib-base
-  - mlflow >=2.20.4
-  - numpy
-  - pandas
-  - python >=3.10
-  - rich >=14.2
+  - matplotlib
+  - rich
+  - ninja
   - scikit-learn
+  - skops
   license: MIT
-  license_family: MIT
-  size: 19709
-  timestamp: 1775131707848
-- conda: https://prefix.dev/conda-forge/noarch/skrub-0.8.0-pyhd8ed1ab_0.conda
-  sha256: 889df476b48bc6aca443f746511a369d42fe9a14f048c9c6b45f97ecf8c0c984
-  md5: 324af159d5f19b2c2794f7dc73863936
+  input:
+    hash: 2275fff505af0571cdd587fb15d6cebe8e5596b57ba21675b948e502bb40c8f7
+    globs:
+    - pyproject.toml
+  sources:
+    scikit-learn:
+      path: ../scikit-learn
+    skops:
+      path: ../skops
+- conda: ../skrub
+  name: skrub
+  version: 0.7.0.dev0
+  build: pyh4616a5c_0
+  subdir: noarch
   depends:
-  - jinja2 >=3.1.2
-  - matplotlib-base >=3.4.3
-  - numpy >=1.23.5
+  - python ~=3.13.0
+  - python *
+  - numpy >=1.25.2,<3
+  - scipy >=1.11.4,<2
+  - joblib >=1.2.0,<2
+  - threadpoolctl >=3.1.0,<4
   - pandas >=1.5.3
+  - jinja2 >=3.1.2
+  - matplotlib >=3.4.3
+  - requests >=2.25.0
   - pydot
-  - python >=3.10
-  - requests >=2.27.1
-  - scikit-learn >=1.4.2
-  - scipy >=1.9.3
+  - scikit-learn
   license: BSD-3-Clause
-  license_family: BSD
-  size: 371876
-  timestamp: 1774440732744
+  input:
+    hash: ee614c9fe8af132f4ad40b35db9ff836552b2cba5c4ae6ec892bc470cfcb7ffa
+    globs:
+    - pyproject.toml
+  sources:
+    scikit-learn:
+      path: ../scikit-learn
 - conda: https://prefix.dev/conda-forge/noarch/smmap-5.0.3-pyhd8ed1ab_0.conda
   sha256: ae723ba6ab7b1998a04ef16b357c1e0043ffd4f4ac9b0da71e393680343a3c86
   md5: 69db183edbe5b7c3e6c157980057a9d0
