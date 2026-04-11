@@ -51,6 +51,9 @@ matplotlib = ">=3.7.3,<4"
 seaborn = ">=0.12.2,<1"
 memory_profiler = ">=0.61.0,<1"
 numpydoc = ">=1.5.0,<2"
+skore = ">=0.15"
+skrub = ">=0.8"
+ipywidgets = "*"
 sphinx = ">=8.0.2,<9"
 sphinx-gallery = ">=0.13.0,<1"
 sphinxcontrib-bibtex = ">=2.4.1,<3"
@@ -59,7 +62,7 @@ pydata-sphinx-theme = ">=0.15.4,<1"
 sphinx-design = ">=0.6.1,<1"
 
 [feature.optional.dependencies]
-pandas = ">=2.0.3,<3"
+pandas = ">=2.0.3,<4"
 
 [feature.keras.dependencies]
 keras = ">=3.3.3,<4"
