@@ -42,8 +42,6 @@ pandas = "*"
 plotly = "*"
 rich = "*"
 seaborn = "*"
-skore-local-project = { path = "../skore-local-project" }
-skore-hub-project = { path = "../skore-hub-project" }
 skore-mlflow-project = { path = "../skore-mlflow-project" }
 scikit-learn = { path = "../scikit-learn" }
 skrub = { path = "../skrub" }
@@ -60,6 +58,7 @@ skore = { path = "." }
 ipykernel = "*"
 ipython = "*"
 jupyterlab = "*"
+jupytext = "*"
 tabulate = "*"
 # for demo
 polars = "*"
@@ -100,7 +99,6 @@ numpydoc = "*"
 plotly = "*"
 pydata-sphinx-theme = "*"
 python-kaleido = "*"
-# sentence-transformers = "*"
 sphinx = "*"
 sphinx-design = "*"
 sphinx-gallery = "*"

@@ -5,6 +5,162 @@ name = "skore-hub"
 platforms = ["osx-arm64"]
 version = "0.1.0"
 
-[tasks]
+[environments]
+default = { features = ["docker", "hub", "ui"], no-default-feature = true }
+hub = { features = ["docker", "hub"], no-default-feature = true }
+ui = { features = ["docker", "ui"], no-default-feature = true }
 
-[dependencies]
+[feature.docker.tasks.up]
+cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml up -d db mail minio createbuckets ory-db kratos-migrate hydra-migrate kratos hydra kratos-ui hydra-setup kratos-setup redis"
+cwd = "skore-hub"
+description = "Start all Docker services"
+
+[feature.docker.tasks.down]
+cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml down --remove-orphans"
+cwd = "skore-hub"
+description = "Stop all Docker services"
+
+[feature.docker.tasks.clean]
+cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml down --remove-orphans --volumes --rmi local"
+cwd = "skore-hub"
+description = "Stop dev services and remove all volumes/images"
+
+[feature.docker.tasks.test]
+cmd = "pixi run -e hub test-backend && pixi run -e ui test-frontend"
+description = "Run backend + frontend tests"
+
+[feature.hub.dependencies]
+python = ">=3.14"
+alembic = ">=1.14.0"
+argon2-cffi = ">=23.1.0"
+authlib = ">=1.6.12"
+boto3 = ">=1.38.19"
+fastapi = ">=0.115.5"
+uvicorn = "*"
+"uvicorn-standard" = "*"
+httpx = "*"
+jinja2 = "*"
+python-multipart = "*"
+itsdangerous = "*"
+pyyaml = "*"
+email-validator = "*"
+orjson = "*"
+ujson = "*"
+opentelemetry-api = ">=1.38.0"
+opentelemetry-exporter-otlp-proto-grpc = ">=1.38.0"
+opentelemetry-instrumentation-asyncio = ">=0.59b0"
+opentelemetry-instrumentation-botocore = ">=0.59b0"
+opentelemetry-instrumentation-fastapi = ">=0.59b0"
+opentelemetry-instrumentation-grpc = ">=0.59b0"
+opentelemetry-instrumentation-httpx = ">=0.59b0"
+opentelemetry-instrumentation-jinja2 = ">=0.59b0"
+opentelemetry-instrumentation-logging = ">=0.59b0"
+opentelemetry-instrumentation-redis = ">=0.59b0"
+opentelemetry-instrumentation-sqlalchemy = ">=0.59b0"
+opentelemetry-instrumentation-starlette = ">=0.59b0"
+opentelemetry-instrumentation-threading = ">=0.59b0"
+opentelemetry-instrumentation-urllib = ">=0.59b0"
+opentelemetry-instrumentation-urllib3 = ">=0.59b0"
+opentelemetry-propagator-aws-xray = ">=1.0.2"
+psycopg = ">=3.2.9"
+pydantic = ">=2.10.2"
+pydantic-settings = ">=2.11.0"
+pytest-asyncio = ">=1.2.0"
+python-jose = ">=3.4.0"
+questionary = ">=2.1.0"
+redis-py = ">=5.2.1"
+semver = ">=3.0.2"
+posthog = ">=7.0.1"
+sentry-sdk = ">=2.26.0"
+sqladmin = ">=0.25.0"
+sqlalchemy = ">=2.0.36"
+unidecode = ">=1.4.0"
+mypy-boto3-s3 = ">=1.38.0"
+altair = "*"
+mypy = ">=1.13.0"
+pre-commit = ">=4.0.1"
+pytest = ">=9.0.3"
+pytest-cov = ">=6.0.0"
+pytest-httpx = ">=0.35.0"
+pytest-mock = ">=3.14.0"
+ruff = ">=0.8.0"
+scikit-learn = ">=1.7.2"
+skrub = ">=0.6.2"
+
+[feature.hub.pypi-dependencies]
+hub = { path = "skore-hub/hub", editable = true }
+skore = { path = "../skore/skore/skore", editable = true }
+opentelemetry-instrumentation-psycopg = ">=0.59b0"
+pytest-randomly = ">=3.16.0"
+types-authlib = ">=1.4.0.20241230"
+types-boto3 = ">=1.38.19"
+types-python-jose = ">=3.4.0.20250224"
+
+[feature.hub.tasks.migrate]
+cmd = "alembic upgrade head"
+cwd = "skore-hub/hub"
+description = "Run database migrations"
+
+[feature.hub.tasks.start-backend]
+cmd = "fastapi dev"
+cwd = "skore-hub/hub"
+depends-on = ["migrate"]
+description = "Start FastAPI server"
+
+[feature.hub.tasks.test-backend]
+cmd = "pytest"
+cwd = "skore-hub/hub"
+description = "Run backend tests"
+
+[feature.hub.tasks.seed]
+cmd = "python scripts/seed.py {{ workspace_name }} -p {{ port }} -e {{ extra_estimators }}"
+cwd = "skore-hub/hub"
+args = [
+  { arg = "workspace_name", default = "seed-workspace" },
+  { arg = "port", default = "8000" },
+  { arg = "extra_estimators", default = "10" },
+]
+description = "Seed the database (creates user on local Ory by default)"
+
+[feature.hub.tasks.seed-ci]
+cmd = "python scripts/seed.py {{ workspace_name }} -p {{ port }} -e 0 --ci-datasets"
+cwd = "skore-hub/hub"
+args = [
+  { arg = "workspace_name", default = "seed-workspace" },
+  { arg = "port", default = "8000" },
+]
+description = "CI seeding: no extra regression estimators, synthetic toxicity-classification data"
+
+[feature.hub.tasks.release]
+cmd = "python scripts/release.py"
+cwd = "skore-hub"
+description = "Create a release PR from main to prod"
+
+[feature.hub.tasks.ory-create-user]
+cmd = "python scripts/create_ory_user.py {{ email }}"
+cwd = "skore-hub/hub"
+args = [
+  { arg = "email", default = "test@probabl.ai" },
+]
+description = "Create a user on local Ory"
+
+[feature.ui.dependencies]
+nodejs = ">=22"
+
+[feature.ui.tasks.start-frontend]
+cmd = "npm install && npm run dev"
+cwd = "skore-hub/ui"
+description = "Start vite dev server"
+
+[feature.ui.tasks.test-frontend]
+cmd = "npm install && npm run test:unit:coverage"
+cwd = "skore-hub/ui"
+description = "Run frontend tests"
+
+[feature.ui.tasks.build-jupyterlite]
+cmd = "SKORE_JUPYTERLITE_SKORE_DIR=\"{{ skore_directory }}\" npm run build:jupyterlite"
+cwd = "skore-hub/ui"
+args = [
+  { arg = "skore_directory", default = "" },
+]
+description = "Build JupyterLite into ui/public/jupyterlite (set skore_directory to bundle a local skore wheel)"

@@ -33,6 +33,7 @@ hatchling = "*"
 
 [package.run-dependencies]
 python = "~=3.13.0"
+cloudpickle = "*"
 diskcache = "*"
 joblib = "*"
 platformdirs = "*"
@@ -45,6 +46,3 @@ skore-local-project = { path = "." }
 ipykernel = "*"
 ipython = "*"
 jupyterlab = "*"
-
-[environments]
-dev = { features = ["source", "dev"], no-default-feature = true }
