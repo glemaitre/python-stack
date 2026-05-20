@@ -42,17 +42,25 @@ pandas = "*"
 plotly = "*"
 rich = "*"
 seaborn = "*"
-skore-mlflow-project = { path = "../skore-mlflow-project" }
 scikit-learn = { path = "../scikit-learn" }
 skrub = { path = "../skrub" }
 
 [feature.source.dependencies]
 ninja = "*"
 scikit-learn = { path = "../scikit-learn" }
-skore-local-project = { path = "../skore-local-project" }
-skore-hub-project = { path = "../skore-hub-project" }
-skore-mlflow-project = { path = "../skore-mlflow-project" }
 skore = { path = "." }
+
+[feature.local.dependencies]
+diskcache = "*"
+platformdirs = "*"
+
+[feature.hub.dependencies]
+httpx = "*"
+orjson = "*"
+pydantic = "*"
+
+[feature.mlflow.dependencies]
+mlflow = ">=3"
 
 [feature.dev.dependencies]
 ipykernel = "*"
@@ -113,7 +121,7 @@ xgboost = "*"
 docs = { cmd = "make html", cwd = "skore/sphinx" }
 
 [environments]
-dev = { features = ["source", "dev", "docs", "lint", "tests"], no-default-feature = true }
+dev = { features = ["source", "local", "hub", "mlflow", "dev", "docs", "lint", "tests"], no-default-feature = true }
 
 [dependencies]
 pytest = ">=9.0.2,<10"
