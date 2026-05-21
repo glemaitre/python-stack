@@ -9,6 +9,12 @@ version = "0.1.0"
 default = { features = ["docker", "hub", "ui"], no-default-feature = true }
 hub = { features = ["docker", "hub"], no-default-feature = true }
 ui = { features = ["docker", "ui"], no-default-feature = true }
+dev = { features = ["docker", "ui", "hub", "dev"], no-default-feature = true }
+
+[feature.dev.dependencies]
+jupyterlab = "*"
+ipython = "*"
+ipykernel = "*"
 
 [feature.docker.tasks.up]
 cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml up -d db mail minio createbuckets ory-db kratos-migrate hydra-migrate kratos hydra kratos-ui hydra-setup kratos-setup redis"
