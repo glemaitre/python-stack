@@ -5,7 +5,7 @@ platforms = ["osx-arm64"]
 
 [package]
 name = "imbalanced-learn"
-version = "0.14.0.dev0"
+version = "0.14.2"
 
 [package.build.backend]
 name = "pixi-build-python"
@@ -49,6 +49,7 @@ ipykernel = "*"
 ipython = "*"
 jupyterlab = "*"
 twine = "*"
+bumpversion = "*"
 
 [feature.docs.dependencies]
 matplotlib = ">=3.7.3,<4"

@@ -34,16 +34,21 @@ hatchling = "*"
 [package.run-dependencies]
 python = "~=3.13.0"
 anywidget = "*"
+click = "*"
+rich-click = "*"
 ipywidgets = "*"
 joblib = "*"
+lazy_loader = "*"
 matplotlib = "*"
 numpy = "*"
 pandas = "*"
 plotly = "*"
 rich = "*"
 seaborn = "*"
+textual = "*"
 scikit-learn = { path = "../scikit-learn" }
 skrub = { path = "../skrub" }
+skore-cli = { path = "../skore-cli" }
 
 [feature.source.dependencies]
 ninja = "*"
@@ -90,6 +95,7 @@ cwd = "skore/skore"
 
 [feature.tests.dependencies]
 pytest = "*"
+pytest-asyncio = "*"
 pytest-cov = "*"
 pytest-order = "*"
 pytest-randomly = "*"
@@ -97,6 +103,7 @@ pytest-xdist = "*"
 xdoctest = "*"
 polars = "*"
 pyarrow = "*"
+respx = "*"
 
 [feature.tests.tasks]
 tests = { cmd = "pytest -vsl --cov=skore --cov-report=xml --cov-report=term-missing -n auto", cwd = "skore/skore/tests" }
