@@ -370,7 +370,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/zlib-ng-2.3.3-hed4e4f5_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zstandard-0.25.0-py313h9734d34_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
-      - conda_source: scikit-learn[a5d75e1a] @ .
+      - conda_source: scikit-learn[be12ba90] @ .
       - pypi: https://files.pythonhosted.org/packages/3f/ec/194f2dbe55b3fe0941b43286c21abb49064d9d023abfb99305c79ad77cad/sphinxcontrib_sass-0.3.5-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/79/b4/ab091585eaa77299558e3289ca206846aefc123fb320b5656ab2542c20ad/libsass-0.23.0.tar.gz
 packages:
@@ -717,6 +717,7 @@ packages:
   license_family: MIT
   purls:
   - pkg:pypi/cachy?source=hash-mapping
+  run_exports: {}
   size: 22762
   timestamp: 1734685195915
 - conda: https://prefix.dev/conda-forge/noarch/certifi-2026.5.20-pyhd8ed1ab_0.conda
@@ -792,6 +793,7 @@ packages:
   license_family: MIT
   purls:
   - pkg:pypi/clikit?source=hash-mapping
+  run_exports: {}
   size: 64319
   timestamp: 1734603385360
 - conda: https://prefix.dev/conda-forge/noarch/colorama-0.4.6-pyhd8ed1ab_1.conda
@@ -1064,6 +1066,7 @@ packages:
   license_family: BSD
   purls:
   - pkg:pypi/gitdb?source=hash-mapping
+  run_exports: {}
   size: 53136
   timestamp: 1735887290843
 - conda: https://prefix.dev/conda-forge/noarch/gitpython-3.1.50-pyhd8ed1ab_0.conda
@@ -1177,6 +1180,7 @@ packages:
   license_family: MIT
   purls:
   - pkg:pypi/hyperframe?source=hash-mapping
+  run_exports: {}
   size: 17397
   timestamp: 1737618427549
 - conda: https://prefix.dev/conda-forge/noarch/identify-2.6.19-pyhd8ed1ab_0.conda
@@ -2053,6 +2057,7 @@ packages:
   license_family: APACHE
   purls:
   - pkg:pypi/overrides?source=hash-mapping
+  run_exports: {}
   size: 30139
   timestamp: 1734587755455
 - conda: https://prefix.dev/conda-forge/noarch/packaging-26.2-pyhc364b38_0.conda
@@ -2139,6 +2144,7 @@ packages:
   license_family: MIT
   purls:
   - pkg:pypi/pkginfo?source=hash-mapping
+  run_exports: {}
   size: 30536
   timestamp: 1739984682585
 - conda: https://prefix.dev/conda-forge/noarch/platformdirs-4.10.0-pyhcf101f3_0.conda
@@ -6292,7 +6298,7 @@ packages:
     - zstd >=1.5.7,<1.6.0a0
   size: 433413
   timestamp: 1764777166076
-- conda_source: scikit-learn[a5d75e1a] @ .
+- conda_source: scikit-learn[be12ba90] @ .
   variants:
     target_platform: osx-arm64
   depends:
@@ -6351,6 +6357,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/noarch/joblib-1.5.3-pyhd8ed1ab_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/meson-1.11.1-pyhcf101f3_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/meson-python-0.19.0-pyh7e86bf3_2.conda
+  - conda: https://prefix.dev/conda-forge/noarch/narwhals-2.22.1-pyhcf101f3_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/packaging-26.2-pyhc364b38_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/pyproject-metadata-0.11.0-pyhd8ed1ab_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/python_abi-3.13-8_cp313.conda
