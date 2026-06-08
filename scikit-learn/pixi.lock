@@ -370,7 +370,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/zlib-ng-2.3.3-hed4e4f5_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zstandard-0.25.0-py313h9734d34_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
-      - conda_source: scikit-learn[be12ba90] @ .
+      - conda_source: scikit-learn[8b695152] @ .
       - pypi: https://files.pythonhosted.org/packages/3f/ec/194f2dbe55b3fe0941b43286c21abb49064d9d023abfb99305c79ad77cad/sphinxcontrib_sass-0.3.5-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/79/b4/ab091585eaa77299558e3289ca206846aefc123fb320b5656ab2542c20ad/libsass-0.23.0.tar.gz
 packages:
@@ -6298,7 +6298,7 @@ packages:
     - zstd >=1.5.7,<1.6.0a0
   size: 433413
   timestamp: 1764777166076
-- conda_source: scikit-learn[be12ba90] @ .
+- conda_source: scikit-learn[8b695152] @ .
   variants:
     target_platform: osx-arm64
   depends:
