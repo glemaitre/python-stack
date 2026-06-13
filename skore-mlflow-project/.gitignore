@@ -1,6 +1,0 @@
-# pixi environments
-.pixi/*
-!.pixi/config.toml
-
-# repository
-skore-mlflow-project/

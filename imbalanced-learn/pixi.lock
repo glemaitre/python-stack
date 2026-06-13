@@ -319,12 +319,12 @@ environments:
       - conda: https://prefix.dev/conda-forge/osx-arm64/zeromq-4.3.5-h10816f8_11.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zlib-ng-2.3.3-hed4e4f5_1.conda
       - conda: https://prefix.dev/conda-forge/osx-arm64/zstd-1.5.7-hbf9d68e_6.conda
-      - conda_source: imbalanced-learn[8ef798dd] @ .
-      - conda_source: scikit-learn[a5d75e1a] @ ../scikit-learn
-      - conda_source: sklearn-compat[f2db2bcb] @ ../sklearn-compat
-      - conda_source: skore-cli[e2d0335d] @ ../skore-cli
-      - conda_source: skore[b561d0cf] @ ../skore
-      - conda_source: skrub[3dbc0996] @ ../skrub
+      - conda_source: imbalanced-learn[43f3f10f] @ .
+      - conda_source: scikit-learn[4856dc7a] @ ../scikit-learn
+      - conda_source: sklearn-compat[37fc36db] @ ../sklearn-compat
+      - conda_source: skore-cli[1dba516b] @ ../skore-cli
+      - conda_source: skore[e63c86fa] @ ../skore
+      - conda_source: skrub[cdb41fd3] @ ../skrub
 packages:
 - conda: https://prefix.dev/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_2.conda
   sha256: a3967b937b9abf0f2a99f3173fa4630293979bd1644709d89580e7c62a544661
@@ -4933,7 +4933,7 @@ packages:
     - zstd >=1.5.7,<1.6.0a0
   size: 433413
   timestamp: 1764777166076
-- conda_source: imbalanced-learn[8ef798dd] @ .
+- conda_source: imbalanced-learn[43f3f10f] @ .
   variants:
     target_platform: noarch
   depends:
@@ -4995,7 +4995,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h010d191_3.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/uv-0.11.19-hc169f86_0.conda
-- conda_source: scikit-learn[a5d75e1a] @ ../scikit-learn
+- conda_source: scikit-learn[4856dc7a] @ ../scikit-learn
   variants:
     target_platform: osx-arm64
   depends:
@@ -5054,6 +5054,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/noarch/joblib-1.5.3-pyhd8ed1ab_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/meson-1.11.1-pyhcf101f3_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/meson-python-0.19.0-pyh7e86bf3_2.conda
+  - conda: https://prefix.dev/conda-forge/noarch/narwhals-2.22.1-pyhcf101f3_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/packaging-26.2-pyhc364b38_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/pyproject-metadata-0.11.0-pyhd8ed1ab_0.conda
   - conda: https://prefix.dev/conda-forge/noarch/python_abi-3.13-8_cp313.conda
@@ -5089,7 +5090,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/osx-arm64/scipy-1.17.1-py313h52f5312_1.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h010d191_3.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/uv-0.11.19-hc169f86_0.conda
-- conda_source: sklearn-compat[f2db2bcb] @ ../sklearn-compat
+- conda_source: sklearn-compat[37fc36db] @ ../sklearn-compat
   variants:
     target_platform: noarch
   depends:
@@ -5144,7 +5145,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h010d191_3.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/uv-0.11.19-hc169f86_0.conda
-- conda_source: skore-cli[e2d0335d] @ ../skore-cli
+- conda_source: skore-cli[1dba516b] @ ../skore-cli
   variants:
     target_platform: noarch
   depends:
@@ -5200,7 +5201,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h010d191_3.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/uv-0.11.19-hc169f86_0.conda
-- conda_source: skore[b561d0cf] @ ../skore
+- conda_source: skore[e63c86fa] @ ../skore
   variants:
     target_platform: noarch
   depends:
@@ -5275,7 +5276,7 @@ packages:
   - conda: https://prefix.dev/conda-forge/osx-arm64/readline-8.3-h46df422_0.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/tk-8.6.13-h010d191_3.conda
   - conda: https://prefix.dev/conda-forge/osx-arm64/uv-0.11.19-hc169f86_0.conda
-- conda_source: skrub[3dbc0996] @ ../skrub
+- conda_source: skrub[cdb41fd3] @ ../skrub
   variants:
     target_platform: noarch
   depends:

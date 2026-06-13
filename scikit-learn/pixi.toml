@@ -52,6 +52,7 @@ towncrier = "*"
 array-api-compat = "*"
 array-api-strict = "*"
 conda-lock = "==2.5.6"
+ipywidgets = "*"
 
 [feature.docs.dependencies]
 sphinx = ">=7.3.7"

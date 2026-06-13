@@ -17,31 +17,44 @@ scipy = "*"
 scikit-learn = { path = "scikit-learn" }
 imbalanced-learn = { path = "imbalanced-learn" }
 skore = { path = "skore" }
-skore-local-project = { path = "skore-local-project" }
-skore-hub-project = { path = "skore-hub-project" }
+skore-cli = { path = "skore-cli" }
 skrub = { path = "skrub" }
 skops = { path = "skops" }
+skada = { path = "skada" }
+sklearn-compat = { path = "sklearn-compat" }
+seaborn = { path = "seaborn" }
+cloudpickle = { path = "cloudpickle" }
 
 [feature.clone.tasks]
-clean-repo-dirs = "rm -rf imbalanced-learn/imbalanced-learn scikit-learn/scikit-learn skore/skore skore-local-project/skore-local-project skore-hub-project/skore-hub-project skrub/skrub skops/skops"
+clean-repo-dirs = "rm -rf imbalanced-learn/imbalanced-learn scikit-learn/scikit-learn skore/skore skore-cli/skore-cli skore-hub/skore-hub skrub/skrub skops/skops skada/skada sklearn-compat/sklearn-compat seaborn/seaborn cloudpickle/cloudpickle probabl-skills/probabl-skills"
 clone-imbalanced-learn = "git clone git@github.com:scikit-learn-contrib/imbalanced-learn.git imbalanced-learn/imbalanced-learn"
 clone-scikit-learn = "git clone git@github.com:scikit-learn/scikit-learn.git scikit-learn/scikit-learn"
 clone-skore = "git clone git@github.com:probabl-ai/skore.git skore/skore"
-clone-skore-local-project = "git clone git@github.com:probabl-ai/skore.git skore-local-project/skore-local-project"
-clone-skore-hub-project = "git clone git@github.com:probabl-ai/skore.git skore-hub-project/skore-hub-project"
+clone-skore-cli = "git clone git@github.com:probabl-ai/skore-cli.git skore-cli/skore-cli"
+clone-skore-hub = "git clone git@github.com:probabl-ai/skore-hub.git skore-hub/skore-hub"
 clone-skrub = "git clone git@github.com:skrub-data/skrub.git skrub/skrub"
 clone-skops = "git clone git@github.com:skops-dev/skops.git skops/skops"
-clone-all = { depends-on = ["clean-repo-dirs", "clone-imbalanced-learn", "clone-scikit-learn", "clone-skore", "clone-skore-local-project", "clone-skore-hub-project", "clone-skrub", "clone-skops"] }
+clone-skada = "git clone git@github.com:scikit-adaptation/skada.git skada/skada"
+clone-sklearn-compat = "git clone git@github.com:sklearn-compat/sklearn-compat.git sklearn-compat/sklearn-compat"
+clone-seaborn = "git clone git@github.com:mwaskom/seaborn.git seaborn/seaborn"
+clone-cloudpickle = "git clone git@github.com:cloudpipe/cloudpickle.git cloudpickle/cloudpickle"
+clone-probabl-skills = "git clone git@github.com:probabl-ai/skills.git probabl-skills/probabl-skills"
+clone-all = { depends-on = ["clean-repo-dirs", "clone-imbalanced-learn", "clone-scikit-learn", "clone-skore", "clone-skore-cli", "clone-skore-hub", "clone-skrub", "clone-skops", "clone-skada", "clone-sklearn-compat", "clone-seaborn", "clone-cloudpickle", "clone-probabl-skills"] }
 
-clean-lock-files = "rm -rf pixi.lock imbalanced-learn/pixi.lock scikit-learn/pixi.lock skore/pixi.lock skore-local-project/pixi.lock skrub/pixi.lock"
+clean-lock-files = "rm -rf pixi.lock imbalanced-learn/pixi.lock scikit-learn/pixi.lock skore/pixi.lock skore-cli/pixi.lock skore-hub/pixi.lock skrub/pixi.lock skops/pixi.lock skada/pixi.lock sklearn-compat/pixi.lock seaborn/pixi.lock cloudpickle/pixi.lock probabl-skills/pixi.lock"
 update-imbalanced-learn = { cmd = "pixi update", cwd = "imbalanced-learn" }
 update-scikit-learn = { cmd = "pixi update", cwd = "scikit-learn" }
 update-skore = { cmd = "pixi update", cwd = "skore" }
-update-skore-local-project = { cmd = "pixi update", cwd = "skore-local-project" }
-update-skore-hub-project = { cmd = "pixi update", cwd = "skore-hub-project" }
+update-skore-cli = { cmd = "pixi update", cwd = "skore-cli" }
+update-skore-hub = { cmd = "pixi update", cwd = "skore-hub" }
 update-skrub = { cmd = "pixi update", cwd = "skrub" }
 update-skops = { cmd = "pixi update", cwd = "skops" }
-update-all = { depends-on = ["update-imbalanced-learn", "update-scikit-learn", "update-skore", "update-skore-local-project", "update-skore-hub-project", "update-skrub", "update-skops"] }
+update-skada = { cmd = "pixi update", cwd = "skada" }
+update-sklearn-compat = { cmd = "pixi update", cwd = "sklearn-compat" }
+update-seaborn = { cmd = "pixi update", cwd = "seaborn" }
+update-cloudpickle = { cmd = "pixi update", cwd = "cloudpickle" }
+update-probabl-skills = { cmd = "pixi update", cwd = "probabl-skills" }
+update-all = { depends-on = ["update-imbalanced-learn", "update-scikit-learn", "update-skore", "update-skore-cli", "update-skore-hub", "update-skrub", "update-skops", "update-skada", "update-sklearn-compat", "update-seaborn", "update-cloudpickle", "update-probabl-skills"] }
 
 [environments]
 source = { features = ["source"] }
