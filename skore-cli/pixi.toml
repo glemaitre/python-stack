@@ -37,6 +37,11 @@ click = "*"
 rich = ">=14.2"
 rich-click = ">=1.9"
 textual = "*"
+pyyaml = "*"
+mcp = ">=1.2"
+# `skore[hub]` is a pip dependency (see pyproject.toml) but is deliberately not
+# mirrored here: `skore`'s pixi package already depends on `skore-cli` via path,
+# so adding `skore` back as a run-dependency would create a build cycle.
 
 [feature.source.dependencies]
 skore-cli = { path = "." }
