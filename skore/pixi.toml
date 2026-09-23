@@ -59,6 +59,7 @@ platformdirs = "*"
 httpx = "*"
 orjson = "*"
 pydantic = "*"
+uuid6 = "*"
 
 [feature.mlflow.dependencies]
 mlflow = ">=3"

@@ -17,7 +17,7 @@ ipython = "*"
 ipykernel = "*"
 
 [feature.docker.tasks.up]
-cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml up -d db mail minio createbuckets ory-db kratos-migrate hydra-migrate kratos hydra kratos-ui hydra-setup kratos-setup redis grafana prometheus tempo"
+cmd = "docker compose -f docker/docker-compose.yml -f docker/docker-compose.ory.yml up -d db mail silo createbuckets ory-db kratos-migrate hydra-migrate kratos hydra kratos-ui hydra-setup kratos-setup redis grafana prometheus tempo"
 cwd = "skore-hub"
 description = "Start all Docker services"
 

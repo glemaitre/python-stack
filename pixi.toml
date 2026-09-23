@@ -18,6 +18,7 @@ scikit-learn = { path = "scikit-learn" }
 imbalanced-learn = { path = "imbalanced-learn" }
 skore = { path = "skore" }
 skore-cli = { path = "skore-cli" }
+skore-skills = { path = "probabl-skills" }
 skrub = { path = "skrub" }
 skops = { path = "skops" }
 skada = { path = "skada" }
